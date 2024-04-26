@@ -59,7 +59,7 @@ const News = (props) => {
                             const description = element.description ? element.description.slice(0, 80) : '';
                             return (
                                 <div className="col-md-4" style={{ padding: "10px" }} key={element.url}>
-                                    <NewsItems title={title} description={description} imageUrl={element.urlToImage} newsurl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                                    <NewsItems title={title} description={description} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
                                 </div>
                             );
                         })}
