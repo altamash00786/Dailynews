@@ -1,6 +1,9 @@
+import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import logo from "./logo.png"
-const NavBar = () => {
+export class NavBar extends Component {
+
+    render() {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,4 +31,6 @@ const NavBar = () => {
             </div>
         )
     }
+}
+
 export default NavBar
